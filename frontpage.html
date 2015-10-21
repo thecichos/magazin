@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <link rel="stylesheet" href="css/effect.css">
+  <link rel="stylesheet" href="css/slideshow-home.css">
+    <link rel="stylesheet" href="css/news.css">
+  <script type="text/javascript" src="js\c3.min.js"></script>
+  <script type="text/javascript" src="js\d3.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/news.js" charset="utf-8"></script>
+  <meta charset="utf-8">
+  <title>home</title>
+</head>
+
+<body>
+
+  <video autoplay loop id="video-background" muted>
+  <source src="http://beta.mattgrossdesign.com/sites/default/files/wood%20autumn-HD.mp4" type="video/mp4">
+</video>
+<div class="news">
+  <p>vil du have vores nyhedsbrev</p>
+  <div class="choicebox">
+    <div class="choice" onclick="alerty()">ja</div>
+    <div class="choice" onclick="alertn()">nej</div>
+  </div>
+</div>
+<div class="news2" style="visibility: hidden">
+  <textarea id="text"></textarea>
+  <div class="thing"></div>
+  <div class="choicebox">
+    <div class="choice" onclick="continu()">fortsæt</div>
+    <div class="choice" onclick="cance()">annuller</div>
+  </div>
+</div>
+<div class="news3" style="visibility: hidden">
+  <p id="answer"></p>
+  <div class="choicebox">
+    <div class="choice" onclick="done()">færdig</div>
+  </div>
+</div>
+<div class="newsrt">
+  <div class="choicebox">
+    <div class="choice" onclick="newsrt()">reset</div>
+  </div>
+</div>
+
+  <div id="header">
+    <div class="title">
+      <h1><a href="frontpage.html">Magazine</a></h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="frontpage.html">home</a>
+          <ul class="sub-menu">
+            <li><a href="#">thing</a></li>
+            <li><a href="#">thing2</a></li>
+            <li><a href="#">thing3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="travel.html">travel</a>
+          <ul class="sub-menu">
+            <li><a href="#">thing</a></li>
+            <li><a href="#">thing2</a></li>
+            <li><a href="#">thing3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="transportation.html"> transportation</a>
+          <ul class="sub-menu">
+            <li><a href="#">thing</a></li>
+            <li><a href="#">thing2</a></li>
+            <li><a href="#">thing3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="photo.html">photo</a>
+          <ul class="sub-menu">
+            <li><a href="#">thing</a></li>
+            <li><a href="#">thing2</a></li>
+            <li><a href="#">thing3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="content">
+    <div class="this">
+      <div class="slideshow">
+        <figure class="pic-1"><img src="mockup-content\content-misc\breakfast-01.jpg" alt=""></figure>
+        <figure class="pic-2"><img src="mockup-content\content-misc\education-01.jpg" alt=""></figure>
+        <figure class="pic-3"><img src="mockup-content\content-misc\social-01.jpg" alt=""></figure>
+        <figure class="pic-4"><img src="mockup-content\content-misc\staff-02.jpg" alt=""></figure>
+      </div>
+    </div>
+    <div class="that">
+    </div>
+  </div>
+</body>
+
+</html>

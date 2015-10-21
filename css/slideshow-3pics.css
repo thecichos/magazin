@@ -1,0 +1,67 @@
+.slideshow {
+  margin: 0 auto;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+figure {
+  border-radius: 25px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 340px;
+  opacity: 0;
+  -webkit-animation: slideShow 9s linear infinite 0s;
+  -o-animation: slideShow 9s linear infinite 0s;
+  animation: slideShow 9s linear infinite 0s;
+}
+.pic-1 {
+  opacity: 1;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.pic-2 {
+  -webkit-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.pic-3 {
+  -webkit-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+    -ms-transformm: scale(0.9);
+  }
+}
+
+}

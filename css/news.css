@@ -1,0 +1,58 @@
+.news, .news2, .news3 {
+  margin: 0 auto;
+  border: 1px outset rgba(248, 248, 255, 0.4);
+  border-radius: 25px;
+  background-color: rgba(248, 248, 255, 0.4);
+  text-align: center;
+  position: fixed;
+  width: 40%;
+  z-index: 11001;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+#text {
+  border: 2px;
+}
+.newsrt {
+  margin: 0 auto;
+  border: 1px outset rgba(248, 248, 255, 0.4);
+  border-radius: 25px;
+  background-color: rgba(248, 248, 255, 0.4);
+  text-align: center;
+  position: fixed;
+  width: 10%;
+  z-index: 11001;
+  margin-left: 0%;
+  margin-right: 30%;
+}
+.news p {
+  text-transform: capitalize;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.choicebox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.choice {
+  margin: 5px;
+  border: 1px outset rgba(248, 248, 255, 0.4);
+  border-radius: 25px;
+  background-color: rgba(248, 248, 255, 0.4);
+  width: 20%;
+  z-index: 5;
+  cursor: default;
+  text-transform: capitalize;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.thing {
+  text-transform: capitalize;
+}

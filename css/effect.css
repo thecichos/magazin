@@ -1,0 +1,151 @@
+.title > h1 > a {
+  padding-bottom: 2px;
+  font-weight: bold;
+  margin: 0 20px;
+  display: inline-block;
+  list-style-type: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-top: 1px solid rgba(248, 248, 255, 0.0);
+  border-bottom: 1px solid rgba(248, 248, 255, 0.0);
+  transition: border 0.5s ease-in-out;
+  position: relative;
+}
+.title > h1 > a:link {
+  color: black;
+}
+.title > h1 > a:visited {
+  color: black;
+}
+.title > h1 > a:hover {
+  color: black;
+  text-decoration: none;
+}
+.title > h1 > a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+
+  transition: all 0.15s ease-in-out 0s;
+}
+.title > h1 > a:hover:before {
+  width: 100%;
+  visibility: visible;
+  transform: scaleX(1);
+}
+.title > h1 > a:active {
+  color: black;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.menu {
+  margin-right: -20px;
+}
+.menu > ul > li > a {
+  color: #000;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  display: inline-block;
+  list-style-type: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+}
+.menu > ul > li {
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  margin: 0 20px;
+  display: inline-block;
+  list-style-type: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+}
+.menu > ul > li:link {
+  color: black;
+}
+.menu > ul > li:visited {
+  color: black;
+}
+.menu > ul > li:hover {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.menu > ul > li:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: black;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out 0s;
+}
+.menu > ul > li:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.menu > ul > li:active {
+  color: black;
+}
+.sub-menu > li > a {
+  z-index: 1;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 20px;
+  display: inline-block;
+  list-style-type: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+.sub-menu > ul > li > a:link {
+  color: black;
+  list-style-type: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+}
+.sub-menu > li > a:visited {
+  color: black;
+  list-style-type: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+}
+.sub-menu > li > a:hover {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.sub-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: black;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out 0s;
+}
+.sub-menu > li > a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.sub-menu > li > a:active {
+  color: black;
+}
